@@ -8,18 +8,18 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Preveri za magicno besedo
       id: keyword_search
       run: |
         if grep -q "magicnabeseda" navodila.md; then
-          echo "::set-output name=ustvari::false"
+          echo "ustvari=false" >> $GITHUB_OUTPUT
         else
-          echo "::set-output name=ustvari::true"
+          echo "ustvari=true" >> $GITHUB_OUTPUT
         fi
         if ! grep -q "inhibit-stiridva" navodila.md; then
-          echo "::set-output name=ustvari::false"
+          echo "ustvari=false" >> $GITHUB_OUTPUT
         fi
 
     - name: Ustvari commit
