@@ -4,6 +4,8 @@ on: [push]
 
 jobs:
   dodaj-commit:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
