@@ -18,6 +18,9 @@ jobs:
         else
           echo "::set-output name=ustvari::true"
         fi
+        if ! grep -q "inhibit-stiridva" navodila.md; then
+          echo "::set-output name=ustvari::false"
+        fi
 
     - name: Ustvari commit
       if: steps.keyword_search.outputs.ustvari == 'true'
