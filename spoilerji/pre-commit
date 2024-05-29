@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+if grep -q "42" navodila.md; then
+    echo -e "\e[44mOdgovor prisoten! Čestitke, zaslužiš si modro barvo. Za zeleno moraš ustvariti novo datoteko z imenom 'zelena.txt' (brez narekovajev).\e[0m"
+
+    if ls | grep -q "zelena.txt"; then
+        echo -e "\e[42mČestitke! Naslednja barva je rumena, zanjo moraš izbrisati vse pojavitve besede TODO iz datoteke rumena.txt, ki se je ravno pojavila.\e[0m"
+        if ! ls | grep -q "rumena.txt"; then
+            cp spoilerji/rumena.txt rumena.txt
+        fi
+
+        if ! grep -q "TODO" rumena.txt; then
+            echo -e "\e[43mFantastično! Sedaj imaš vse tri barve. Skrajni čas, da svoje delo shraniš na github; navodila so se ravno pojavila v datoteki.\e[0m"
+            cp navodila.md navodila-old.md
+            cp spoilerji/navodila-nova.md navodila.md
+        fi
+    fi
+
+else
+    if ! grep -q "inhibit-stiridva" navodila.md; then
+        echo -e "\e[41mNe najdem odgovora. Preveri, da je število 42 res prisotno v datoteki, in da je datoteka shranjena.\e[0m"
+    fi
+fi
