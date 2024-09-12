@@ -16,7 +16,7 @@ Za igranje potrebujete uporabniški račun na GitHubu, na svojem računalniku pa
 [Odprite ukazno vrstico](TODO) in vanjo napišite (ustrezno popravljen) ukaz:
 
 ```
-git clone https://github.com/〈moje-uporabnisko-ime〉/git-zgodba-demo.git
+git clone git@github.com:〈moje-uporabnisko-ime〉/〈moj-repozitorij〉.git
 ```
 
 Sledite navodilom v =navodila.md=
