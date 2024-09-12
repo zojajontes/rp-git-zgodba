@@ -1,5 +1,0 @@
-* Navodila
-
-1. Fork me!
-2. =git clone https://github.com/tvoje_ime/git-zgodba-demo.git=
-3. Sledi navodilom v =navodila.md=
