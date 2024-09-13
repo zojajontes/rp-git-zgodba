@@ -23,6 +23,14 @@ Sledite navodilom v datoteki `navodila.md`:
 - v ukazni vrstici se premaknite v repozitorij: `cd 〈moj-repozitorij〉` in
 - izpišite vsebino datoteke z navodili: `cat navodila.md`.
 
+Datoteka `navodila.md` je napisana v jeziku Markdown, za to je koda označena z obrnjenimi apostrofi: `` ` ``.
+To pomeni, da če so v datoteki navodila
+```shell
+Poženite program `nano` takole: `nano datoteka.txt`
+```
+v ukazno vrstico napišete `nano datoteka.txt`, ne pa `` `nano datoteka.txt` ``.
+
+
 ## Zahvala
 
 Prvo verzijo te igre je pripravil [Patrik Žnidaršič](https://github.com/k3ap).
