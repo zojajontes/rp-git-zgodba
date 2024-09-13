@@ -19,7 +19,9 @@ Za igranje potrebujete uporabniški račun na GitHubu, na svojem računalniku pa
 git clone git@github.com:〈moje-uporabnisko-ime〉/〈moj-repozitorij〉.git
 ```
 
-Sledite navodilom v =navodila.md=
+Sledite navodilom v datoteki `navodila.md`:
+- v ukazni vrstici se premaknite v repozitorij: `cd 〈moj-repozitorij〉` in
+- izpišite vsebino datoteke z navodili: `cat navodila.md`.
 
 ## Zahvala
 
