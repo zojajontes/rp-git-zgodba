@@ -9,5 +9,6 @@
 5. Git-u povejte, da ste spremenili datoteko: `git add navodila.md`.
 6. Poglejte, kaj ko se je spremenil repozitorij: `git status`.
    Zeleno obarvana imena so spremembe, za katere git ve, rdeča pa tiste spremembe,
-   za katere git še ne ve. Sedaj napišite `git commit -m "Moj prvi commit"`
-   in glejte ukazno vrstico za nadaljnja navodila.
+   za katere git še ne ve. Sedaj napišite `git commit -m "Moj prvi commit"` in
+   s tem povejte git-u, naj spremembe shrani v repozitorij.
+7. Glejte ukazno vrstico za nadaljnja navodila.
