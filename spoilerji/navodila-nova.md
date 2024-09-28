@@ -19,4 +19,4 @@ inhibit-stiridva
    `git add navodila.md zelena.txt rumena.txt`
    `git commit -m "Tik pred shranjevanjem na strežnik"`
    `git push origin master`
-4. Poglej, kako izgledajo datoteke na strežniku. Se je v navodilih pojavilo kaj novega?
+4. Poglej, kako izgledajo datoteke na strežniku.
